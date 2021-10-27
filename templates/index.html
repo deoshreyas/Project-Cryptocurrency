@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRYPTO</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+    body, html {
+      height: 100%;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    .background {
+      background-image: url("http://hdqwalls.com/wallpapers/3d-black-cube-4r.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100vh;
+      width: 100%;
+    }
+
+    #fill-up {
+      background-color: none;
+      width: 100%;
+      height: 150px;
+    }
+
+    .blur {
+      backdrop-filter: blur(5px);
+      width: 100%;
+      height: 100%;
+
+    }
+
+  .blur img {
+    height: 0;
+  }
+
+    @media only screen and (min-width: 992px) {
+    .blur img {
+      margin-left: 60%;
+      filter: drop-shadow(0px 0px 20px rgba(255, 255, 255, 0.50)); 
+      height: 50vh;
+      margin-top: 2%;
+    }
+}
+    
+
+    .logo {
+      padding-left: 110px;
+      padding-top: 75px;
+      font-size: 6vh;
+      font-family: Righteous, monospace;
+      color: white;
+      text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5); 
+    }
+
+    .navbar {
+        margin-right: 110px;
+        margin-top: -40px;
+    }
+
+    .navbar a {
+        text-decoration: none;
+        font-size: 25px;
+        float: right;
+        font-family: Chakra Petch, monospace;
+        margin-left: 110px;
+        color: white;
+        text-shadow: 0px 0px 10px rgba(255, 255, 255, 1); 
+    }
+
+    .navbar a:hover {
+      color: #FAC790;
+    }
+
+    .navbar .underline {
+        width:0px; 
+        height: 3px; 
+        background-color: yellow; 
+        margin-top: -40px;
+        margin-right: 50px;
+    }
+
+    #big-title {
+      position: absolute;
+      top: 32%;
+      color: white;
+      font-family: 'Oswald', sans-serif;
+      font-size: 10vh;
+      left: 110px;
+      text-shadow: 0px 0px 10px rgba(255, 255, 255, 1); 
+    }  
+
+    .subtitle {
+      position: absolute;
+      top: 48.5%;
+      color: white;
+      font-family: 'Chakra Petch', monospace;
+      font-size: 2vh;
+      left: 115px;
+      max-width: 60vh;
+      line-height: 4vh;
+      text-shadow: 0px 0px 10px rgba(255, 255, 255, 1); 
+    }
+
+    .explore-button {
+      text-decoration: none;
+      position: absolute;
+      top: 65%;
+      color: black;
+      font-family: 'Chakra Petch', monospace;
+      font-size: 2.5vh;
+      left: 115px;
+      background-image: linear-gradient(#FAE07D, #FCC68F);
+      width: 25vh;
+      border-radius: 50px;
+      height: 8vh;
+      font-weight: bold;
+      padding-top: 2.25vh;
+      filter: drop-shadow(0px 0px 20px rgba(255, 255, 255, 0.5)); 
+      text-align: center;
+    }
+
+
+  </style>
+  
+</head>
+<body>
+  <div class="background">
+    <div class="blur">
+      <h1 class="logo">CRYPTO</h1>
+      <div class="navbar">
+        <a href="/contact-us/" class="logo-a" id="a3" style="margin-right: 0px;">Contact Us</a>
+        <a href="/meet-the-team/" class="logo-a" id="a2">Meet the Team
+        <a href="/" class="logo-a" id="a1">Home</a>
+      </div>
+
+      <h1 id="big-title">CRYPTOCURRENCY</h1>
+      <p class="subtitle">A cryptocurrency is a digital or virtual currency that is secured by cryptogritaphy, which makes it nearly impossible to counterfeit or double-spend.</p>
+      <a href="/explore/" class="explore-button">EXPLORE</a>
+      <div id="fill-up"></div>
+      <img src="{{ url_for('static', filename='bitcoin_.png') }}" alt="THE BITCOIN">
+    </div>
+  </div>
+</body>
+</html>

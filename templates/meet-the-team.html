@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+	<meta charset="utf-8">
+	<title>CRYPTO - CONTACT US</title>
+	<style media="screen">
+		@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Numans&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+		* {
+			padding: 0;
+			margin: 0;
+		}
+
+		body {
+			background-image: url("http://hdqwalls.com/wallpapers/3d-black-cube-4r.jpg");
+			backrgound-size: cover;
+		}
+
+		.form-container {
+			background: white;
+			margin-top: 5%;
+			margin-left: 5%;
+			width: 40%;
+			height: 65vh;
+			position: fixed;
+			padding-top: 5%;
+			border-radius: 20px;
+		}
+
+		.form-container h1 {
+			font-size: 4vh;
+			color: black;
+			font-family: 'Oswald', monospace;
+			text-align: center;
+			margin-top: -38px;
+		}
+
+		.form-container p {
+			font-family: 'Chakra Petch', serif;
+			margin-left: 10px;
+			margin-right: 10px;
+			margin-bottom: 0.1%;
+			font-size: 25px;
+			color: black;
+			text-align: center;
+		}
+
+		.form-container .contacts {
+			align: center;
+		}
+
+		.form-container .contacts p {
+			font-family: 'Red Hat Display', serif;
+			font-size: 20px;
+			align: right;
+			padding-left: 5%;
+			padding-right: 5%;
+		}
+
+		.form-container .contacts img {
+			margin-left: 47%;
+			width: 25px;
+			height: 25px;
+		}
+
+		.form-container .contacts .separator {
+			width: 100%;
+			height: 10px;
+		}
+
+		.logo {
+			padding-left: 110px;
+			padding-top: 75px;
+			font-size: 6vh;
+			font-family: Righteous, monospace;
+			color: white;
+			text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+		}
+
+		.navbar {
+			margin-right: 110px;
+			margin-top: -40px;
+		}
+
+		.navbar a {
+			text-decoration: none;
+			font-size: 25px;
+			float: right;
+			font-family: Chakra Petch, monospace;
+			margin-left: 110px;
+			color: white;
+			text-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
+		}
+
+		.navbar a:hover {
+			color: #FAC790;
+		}
+
+		.contact-form {
+			background-color: transparent;
+			margin-left: 51.5%;
+			width: 47.2%;
+			height: 94%;
+			margin-top: 7.5%;
+			position: fixed;
+		}
+
+		.contact-form form .field {
+			width: 90%;
+			align: center;
+			height: 50px;
+			max-width: 90%;
+			border: none;
+			border-bottom: 3px solid white;
+			margin-bottom: 3vh;
+			background: transparent;
+		}
+
+		.contact-form form .field {
+			font-size: 18px;
+			font-family: 'Numans', serif;
+			color: white;
+		}
+
+		.contact-form form #submit-button {
+
+			text-decoration: none;
+			position: absolute;
+			color: black;
+			font-family: 'Chakra Petch', monospace;
+			font-size: 2.5vh;
+			right: 20%;
+			background-image: linear-gradient(#FAE07D, #FCC68F);
+			width: 60%;
+			border-radius: 50px;
+			height: 50px;
+			font-weight: bold;
+			padding-top: 0.5vh;
+			filter: drop-shadow(0px 0px 20px rgba(255, 255, 255, 0.5));
+			text-align: center;
+			border: none;
+		}
+
+
+		textarea:focus,
+		input:focus {
+			outline: none;
+		}
+
+		.title {
+			font-size: 8vh !important;
+		}
+	</style>
+</head>
+
+<body>
+	<h1 class="logo">CRYPTO</h1>
+	<div class="navbar">
+		<a href="/contact-us/" class="logo-a" id="a3" style="margin-right: 0px;">Contact Us</a>
+		<a href="/meet-the-team/" class="logo-a" id="a2">Meet the Team</a>
+		<a href="/" class="logo-a" id="a1">Home</a>
+	</div>
+	<div class="form-container">
+		<h1 class="title">MEET THE TEAM</h1>
+		<p>We are the developers of CRYPTO...</p>
+    <br>
+            <div class="contacts">
+              <br>
+              <br>
+                <h1>Aarav Bansal</h1>
+                <p>A Python programmer who's been coding since 3 years. Currently, he's learning new languages including Dart and C#.</p>
+                <p>E-Mail: bansalaarav2007@gmail.com</p>
+                <br><br><br>
+                <h1>Shreyas Deo</h1>
+                <p>Newbie developer, working on Python, C++ and frontend development. Also likes music and books.</p>
+                <p>E-Mail: shreyasdeo.k50@gmail.com</p>
+            </div>
+        </div>
+        <div class="contact-form">
+            <form action="/contact-us/" method="POST">
+                <p align="center" style="margin-top: 15px;"><input type="text" id="full-name" placeholder="FULL NAME" class="field" name="full-name" required></p>
+                <p align="center"><input type="email" placeholder="E-MAIL" id="email" class="field" name="email" required></p>
+                <p align="center"><textarea id="message" placeholder="MESSAGE" class="field" style="height: 150px; margin-bottom: 30px;" rows="3" name="message"
+                required></textarea></p>
+                <p align="center"><input type="submit" value="SEND MESSAGE" id="submit-button"></p>
+            </form>
+        </div>
+    </body>
+</html>
